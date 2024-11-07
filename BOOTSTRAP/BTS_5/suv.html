@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUV Nissan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+
+    .navbar {
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar:hover {
+      background-color: #343a40;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.8rem;
+    }
+
+    header {
+      background-image: url('Immagini/Suv background.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+      position: relative;
+    }
+
+    header .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: black;
+      margin-bottom: 20px;
+    }
+
+    .section-content {
+      background-color: #f9f9f9;
+      padding: 50px 0;
+    }
+
+    .section-content h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .feature-item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 30px;
+    }
+
+    .card {
+      width: 300px;
+      height: 350px;
+      background: #fff;
+      border: 2px solid #e1e1e1;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    .card-text {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: #fff;
+      padding: 30px 0;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    .navbar-nav .nav-link {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      padding: 10px 15px;
+    }
+
+    .navbar-nav .nav-link:hover {
+      background-color: #e63946;
+      color: #fff !important;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+    <div class="container">
+      <a class="navbar-brand" href="BTS_5.html">Nissan</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="BTS_5.html#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="BTS_5.html#modelli">Modelli</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="BTS_5.html#caratteristiche">Caratteristiche</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="BTS_5.html#contattaci">Contattaci</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="overlay"></div>
+    <div class="container text-center">
+      <h1 style="font-size: 3.5rem; font-weight: 600; color: #fff; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 20px; text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.9);">SUV Nissan</h1>
+      <p class="lead" style="font-size: 1.25rem; color: white; font-weight: 400;">Potenza e comfort, per affrontare ogni avventura con stile.</p>
+    </div>
+  </header>
+  
+  
+  <section class="section-content">
+    <div class="container">
+      <h2 class="section-title">Caratteristiche dei SUV Nissan</h2>
+      <p class="text-center">I SUV Nissan sono pensati per coloro che desiderano spazio, robustezza e versatilità, senza sacrificare lo stile e il comfort.</p>
+  
+      <div class="feature-item">
+        <div class="card">
+          <img src="Immagini/Interno SUV.jpg" alt="Spazio e Comfort">
+          <h5 class="card-title">Spazio e Comfort</h5>
+          <p class="card-text">Interni spaziosi e design versatile per ogni esigenza.</p>
+        </div>
+        <div class="card">
+          <img src="Immagini/Suv trazione.jpg" alt="Trazione Integrale">
+          <h5 class="card-title">Trazione Integrale</h5>
+          <p class="card-text">Prestazioni eccellenti su qualsiasi terreno.</p>
+        </div>
+        <div class="card">
+          <img src="Immagini/suv nissan elegante.jpg" alt="Stile e Eleganza">
+          <h5 class="card-title">Stile e Eleganza</h5>
+          <p class="card-text">Un look dinamico e contemporaneo per ogni occasione.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer class="text-light py-4">
+    <div class="container text-center">
+      <p>&copy; 2024 Nissan. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

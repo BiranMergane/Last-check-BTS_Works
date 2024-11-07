@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nissan - Mergane</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 2.5rem;
+      color: #fff !important;
+      text-transform: uppercase;
+    }
+  
+    .navbar {
+      position: relative;
+    }
+  
+    .navbar-nav .nav-link {
+      font-size: 1.1rem;
+    }
+  
+    .carousel-item img {
+      object-fit: cover;
+      height: 500px;
+    }
+  
+    .feature-icon {
+      font-size: 3rem;
+      color: #e63946;
+    }
+  
+    
+    @media (max-width: 992px) { 
+  .navbar-brand {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) { 
+  .navbar-brand {
+    font-size: 1.8rem;
+  }
+
+}
+
+.navbar-nav .nav-link:hover {
+      background-color: #e63946;
+      color: #fff !important;
+      border-radius: 5px;
+    }
+
+    .alert-custom {
+      border-radius: 15px;
+      padding-right: 50px;
+      background-color: #e6f7ff;
+      border-left: 5px solid #3399ff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: opacity 0.5s ease;
+    }
+
+   
+    .alert-custom .close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 1.5rem;
+      color: #3399ff;
+    }
+
+  </style>
+  
+</head>
+<body>
+
+  <div class="alert alert-custom alert-dismissible fade show" role="alert">
+    <strong>Novità!</strong> Scopri la nostra nuova linea di auto elettriche, più sostenibili e tecnologiche che mai.
+    <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+    <div class="container">
+      
+      <a class="navbar-brand" href="#">Nissan</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#modelli">Modelli</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#caratteristiche">Caratteristiche</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#chi-siamo">Chi siamo</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="#contattaci">Contattaci</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-dark text-light text-center py-5">
+    <div class="container">
+       <h1 class="display-4 font-weight-bold text-uppercase mb-4" style="font-family: 'Arial Black', sans-serif; letter-spacing: 2px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); word-wrap: break-word; font-size: 3.5rem;">
+          Benvenuti nel mondo Nissan
+       </h1>
+       <p class="lead">Scopri le auto del futuro, progettate per ispirarti e garantire una guida eccezionale.</p>
+       <a href="#modelli" class="btn btn-danger mt-3">Scopri i modelli</a>
+     </div>
+ </header>
+ 
+ 
+
+
+  <section id="modelli" class="py-5 bg-light">
+    <div id="modelliCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="suv.html">
+            <img src="Immagini/SUV.webp" class="d-block mx-auto" alt="SUV Nissan" style="height: 500px; object-fit: cover; max-width: 80%;">
+          </a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>SUV Nissan</h5>
+            <p>Potente e spazioso, ideale per ogni avventura.</p>
+          </div>
+        </div>
+    
+        <div class="carousel-item">
+          <a href="sportive.html">
+            <img src="Immagini/Sportive.jpg" class="d-block mx-auto" alt="Auto Sportive Nissan" style="height: 500px; object-fit: cover; max-width: 80%;">
+          </a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Auto Sportive Nissan</h5>
+            <p>Prestazioni straordinarie per i veri appassionati di velocità.</p>
+          </div>
+        </div>
+    
+        <div class="carousel-item">
+          <a href="elettrica.html">
+            <img src="Immagini/Elettriche.webp" class="d-block mx-auto" alt="Elettrica Nissan" style="height: 500px; object-fit: cover; max-width: 80%;">
+          </a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Elettriche Nissan</h5>
+            <p>Sostenibilità e innovazione per un futuro migliore.</p>
+          </div>
+        </div>
+      </div>
+    
+      <button class="carousel-control-prev" type="button" data-bs-target="#modelliCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+        <span class="visually-hidden">Precedente</span>
+      </button>
+      
+      <button class="carousel-control-next" type="button" data-bs-target="#modelliCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+        <span class="visually-hidden">Successivo</span>
+      </button>
+    </div>
+  </section>
+
+
+  <section id="caratteristiche" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Caratteristiche Distintive</h2>
+      <p class="text-center">Tecnologia avanzata e comfort per ogni guidatore.</p>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="feature-icon mb-3"><i class="bi bi-speedometer2"></i></div>
+          <h5>Alta Velocità</h5>
+          <p>Motori potenti per prestazioni elevate in ogni condizione.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-icon mb-3"><i class="bi bi-battery-charging"></i></div>
+          <h5>Efficienza Energetica</h5>
+          <p>Risparmio e sostenibilità grazie ai modelli elettrici e ibridi.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-icon mb-3"><i class="bi bi-shield-check"></i></div>
+          <h5>Sicurezza Avanzata</h5>
+          <p>Sistemi di sicurezza di ultima generazione per una guida serena.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="chi-siamo" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4 text-uppercase">Chi Siamo</h2>
+      <p class="text-center mb-5">
+        Nissan è un marchio automobilistico che ha sempre puntato all'innovazione, alla qualità e alla sostenibilità. La nostra missione è quella di offrire ai nostri clienti veicoli avanzati tecnologicamente, sicuri, sostenibili e progettati per rispondere alle sfide di un futuro sempre più ecologico e dinamico.
+      </p>
+      
+      <div class="row">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <div class="card shadow-sm border-light rounded">
+            <img src="Immagini/Nissan Futuro.jpg" class="card-img-top" alt="Innovazione Nissan">
+            <div class="card-body">
+              <h4 class="card-title text-center text-danger">La nostra Visione</h4>
+              <p class="card-text">
+                Offrire soluzioni di mobilità sostenibili e tecnologicamente avanzate per migliorare la qualità della vita delle persone e ridurre l'impatto ambientale. Vogliamo essere leader nella mobilità del futuro, creando un mondo più connesso, sicuro e sostenibile.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6">
+          <div class="card shadow-sm border-light rounded">
+            <img src="Immagini/zero emission.png" class="card-img-top" alt="Valori Nissan">
+            <div class="card-body">
+              <h4 class="card-title text-center text-danger">I Nostri Valori</h4>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-check-circle text-success"></i> <strong>Innovazione:</strong> Creiamo veicoli all'avanguardia, anticipando le esigenze di domani.</li>
+                <li><i class="bi bi-check-circle text-success"></i> <strong>Sostenibilità:</strong> Impegnati a ridurre l'impatto ambientale e promuovere soluzioni di mobilità elettrica.</li>
+                <li><i class="bi bi-check-circle text-success"></i> <strong>Sicurezza:</strong> La sicurezza è il nostro obiettivo primario, per proteggere te e chi ami.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row mt-5">
+        <div class="col-12 text-center">
+          <h3 class="text-uppercase text-danger">Unisciti a Noi!</h3>
+          <p>
+            In Nissan crediamo che ogni viaggio sia un'opportunità per esplorare e crescere. Siamo alla ricerca di individui appassionati, determinati e pronti a fare la differenza nel futuro della mobilità. Se condividi la nostra visione, <strong>unisciti a noi</strong> e contribuisci a costruire un mondo migliore.
+          </p>
+          <a href="#contattaci" class="btn btn-danger">Contattaci per saperne di più</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section id="contattaci" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Contattaci</h2>
+      <p class="text-center mb-4">Siamo qui per aiutarti. Inviaci un messaggio e ti risponderemo al più presto.</p>
+      
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8">
+          <form action="https://api.web3forms.com/submit" method="POST" class="bg-white p-4 rounded shadow-sm">
+            <input type="hidden" name="access_key" value="7efe5767-1c51-45c0-b403-06e2d44b0b4b">
+            
+            <div class="row">
+              <div class="col-12 col-md-6 mb-3">
+                <label for="name" class="form-label">Nome Completo</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Inserisci il tuo nome" required>
+              </div>
+              <div class="col-12 col-md-6 mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Inserisci la tua email" required>
+              </div>
+            </div>
+            
+            <div class="mb-3">
+              <label for="subject" class="form-label">Oggetto</label>
+              <input type="text" name="subject" id="subject" class="form-control" placeholder="Inserisci l'oggetto" required>
+            </div>
+            
+            <div class="mb-3">
+              <label for="message" class="form-label">Messaggio</label>
+              <textarea name="message" id="message" class="form-control" rows="5" placeholder="Scrivi il tuo messaggio" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-danger w-100">Invia il messaggio</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+<footer class="bg-dark text-light py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
+        <h5 class="text-uppercase">Seguici su</h5>
+        <div class="social-icons mt-3">
+          <a href="https://www.instagram.com/biran_zz/" target="_blank" class="text-light me-3">
+            <i class="bi bi-instagram" style="font-size: 1.8rem;"></i>
+          </a>
+          <a href="https://www.facebook.com/people/Saetta-Sium/pfbid0269W3CXo52a4pjpAKmdFUfMsvZQaDnpT4vWDHk51WxxLC4vckBr8oXw5RBagHMT7Kl/?locale=it_IT" target="_blank" class="text-light me-3">
+            <i class="bi bi-facebook" style="font-size: 1.8rem;"></i>
+          </a>
+          <a href="https://x.com/SAETTA_SS" target="_blank" class="text-light">
+            <i class="bi bi-twitter" style="font-size: 1.8rem;"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
+        <h5 class="text-uppercase">Link Utili</h5>
+        <ul class="list-unstyled mt-3">
+          <li><a href="#chi-siamo" class="text-light">Chi siamo</a></li>
+          <li><a href="#servizi" class="text-light">Servizi</a></li>
+          <li><a href="#privacy-policy" class="text-light">Privacy Policy</a></li>
+          <li><a href="#terms-of-service" class="text-light">Termini di Servizio</a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-4 text-center text-md-start">
+        <h5 class="text-uppercase">Contattaci</h5>
+        <p class="mt-3">
+          <i class="bi bi-geo-alt-fill"></i> Indirizzo: Via Francesco Gatti 14
+        </p>
+        <p>
+          <i class="bi bi-phone-fill"></i> Telefono: +39 3347246161
+        </p>
+        <p>
+          <i class="bi bi-envelope-fill"></i> Email: mergane.biran@iisgalvanimi.edu.it
+        </p>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <p class="mb-0">&copy; 2024 Nissan. Tutti i diritti riservati.</p>
+    </div>
+  </div>
+</footer>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
